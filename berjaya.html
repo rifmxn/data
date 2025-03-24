@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleberjaya.css">
+    <title>Modern AI Dashboard</title>
+</head>
+<body>
+    <div class="dashboard-container">
+        <header class="dashboard-header">
+            <h1>AI Dashboard</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="analytics.html">Analytics</a></li>
+                    <li><a href="report.html">Report</a></li>
+                    <li><a href="settings.html">Settings</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="register.html">Register</a></li>
+                </ul>
+            </nav>
+            <div class="user-profile">
+                <img src="profile.jpg" alt="Profile Picture">
+                <span>John Doe</span>
+            </div>
+        </header>
+
+        <main class="dashboard-main">
+            <section class="metrics">
+                <div class="metric-card">
+                    <h3>Total Users</h3>
+                    <p>1,234</p>
+                    <span class="metric-trend">+5%</span>
+                </div>
+                <div class="metric-card">
+                    <h3>Active Sessions</h3>
+                    <p>567</p>
+                    <span class="metric-trend">+2%</span>
+                </div>
+                <div class="metric-card">
+                    <h3>Data Processed</h3>
+                    <p>12.3 TB</p>
+                    <span class="metric-trend">+10%</span>
+                </div>
+            </section>
+
+            <section class="charts">
+                <div class="chart-card">
+                    <h3>User Growth</h3>
+                    <canvas id="userGrowthChart"></canvas>
+                </div>
+                <div class="chart-card">
+                    <h3>Data Usage</h3>
+                    <canvas id="dataUsageChart"></canvas>
+                </div>
+            </section>
+
+            <section class="recent-activity">
+                <h3>Recent Activity</h3>
+                <ul>
+                    <li>User John Doe logged in</li>
+                    <li>Data export completed</li>
+                    <li>New user registered</li>
+                    <li>System update applied</li>
+                </ul>
+            </section>
+        </main>
+
+        <footer class="dashboard-footer">
+            <p>&copy; 2023 AI Dashboard. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>

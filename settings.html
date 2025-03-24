@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleberjaya.css">
+    <title>Settings</title>
+</head>
+<body>
+    <div class="dashboard-container">
+        <header class="dashboard-header">
+            <h1>Settings</h1>
+            <nav>
+                <ul>
+                    <li><a href="berjaya.html">Home</a></li>
+                    <li><a href="analytics.html">Analytics</a></li>
+                    <li><a href="report.html">Report</a></li>
+                    <li><a href="settings.html">Settings</a></li>
+                    <li><a href="login.html">Logout</a></li>
+                </ul>
+            </nav>
+            <div class="user-profile">
+                <img src="profile.jpg" alt="Profile Picture">
+                <span>Admin</span>
+            </div>
+        </header>
+
+        <main class="dashboard-main">
+            <section class="settings-section">
+                <h2>Profile Settings</h2>
+                <form id="profileForm">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" value="">
+                    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" value="">
+                    
+                    <label for="password">Change Password:</label>
+                    <input type="password" id="password" name="password" placeholder="New Password">
+                    
+                    <button type="submit">Save Changes</button>
+                </form>
+            </section>
+
+            <section class="settings-section">
+                <h2>Security Settings</h2>
+                <p>Two-Factor Authentication: <span class="status">Enabled</span></p>
+                <button>Disable 2FA</button>
+            </section>
+
+            <section class="settings-section">
+                <h2>Notification Settings</h2>
+                <p>Email Notifications: <span class="status">Enabled</span></p>
+                <button>Disable Email Notifications</button>
+            </section>
+        </main>
+
+        <footer class="dashboard-footer">
+            <p>&copy; 2023 AI Dashboard. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>

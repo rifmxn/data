@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleberjaya.css">
+    <title>Analytics</title>
+</head>
+<body>
+    <div class="dashboard-container">
+        <header class="dashboard-header">
+            <h1>Analytics</h1>
+            <nav>
+                <ul>
+                    <li><a href="berjaya.html">Home</a></li>
+                    <li><a href="analytics.html">Analytics</a></li>
+                    <li><a href="report.html">Report</a></li>
+                    <li><a href="settings.html">Settings</a></li>
+                    <li><a href="login.html">Logout</a></li>
+                </ul>
+            </nav>
+            <div class="user-profile">
+                <img src="profile.jpg" alt="Profile Picture">
+                <span>John Doe</span>
+            </div>
+        </header>
+
+        <main class="dashboard-main">
+            <section class="analytics-section">
+                <h2>User Analytics</h2>
+                <div class="analytics-card">
+                    <h3>Total Users</h3>
+                    <p>1,234</p>
+                    <span class="metric-trend">+5%</span>
+                </div>
+                <div class="analytics-card">
+                    <h3>Active Users</h3>
+                    <p>567</p>
+                    <span class="metric-trend">+2%</span>
+                </div>
+            </section>
+
+            <section class="analytics-section">
+                <h2>System Performance</h2>
+                <div class="analytics-card">
+                    <h3>Uptime</h3>
+                    <p>99.9%</p>
+                </div>
+                <div class="analytics-card">
+                    <h3>Response Time</h3>
+                    <p>120ms</p>
+                </div>
+            </section>
+
+            <section class="analytics-section">
+                <h2>Data Trends</h2>
+                <canvas id="dataTrendsChart"></canvas>
+            </section>
+        </main>
+
+        <footer class="dashboard-footer">
+            <p>&copy; 2023 AI Dashboard. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        // Sample data for Data Trends Chart
+        const dataTrendsData = {
+            labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
+            datasets: [{
+                label: 'Data Processed (TB)',
+                data: [1.2, 1.8, 2.3, 2.5, 2.7, 3.0, 3.2],
+                fill: false,
+                borderColor: 'rgb(75, 192, 192)',
+                tension: 0.1
+            }]
+        };
+
+        const dataTrendsChart = new Chart(document.getElementById('dataTrendsChart'), {
+            type: 'line',
+            data: dataTrendsData,
+            options: {
+                responsive: true,
+                plugins: {
+                    legend: {
+                        position: 'top',
+                    },
+                    title: {
+                        display: true,
+                        text: 'Data Trends Over Time'
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html>
